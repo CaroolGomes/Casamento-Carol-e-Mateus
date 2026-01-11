@@ -1,120 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Caroline & Mateus | Lista de Presentes</title>
+  <meta charset="UTF-8">
+  <title>Caroline & Mateus</title>
 
-  <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/brittany-signature" rel="stylesheet">
+  <!-- Fonte estilo Morgalino -->
+  <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<section class="hero">
-  <h1>Caroline & Mateus</h1>
+<header>
+  <h1 class="nomes">Caroline & Mateus</h1>
+
   <p class="versiculo">
-    “Encontrei o amor da minha vida, eu o agarrei e não o deixarei ir.”
+    “Encontrei o amor da minha vida, eu o agarrei e não o deixarei ir.”  
+    <br>
     <span>Cantares 3:4</span>
+  </p>
+</header>
+
+<section class="intro">
+  <p>
+    💍😂 Nossa lista foi pensada com amor, humor e muita sinceridade.  
+    Cada presente ajuda a construir nossa rotina, nossos sonhos  
+    e nossa sanidade mental.
   </p>
 </section>
 
-<section class="lista">
-  <h2>Lista de Presentes</h2>
-  <p class="sub">Nossos presentes são simbólicos 💕</p>
+<section class="lista-presentes">
 
-  <div class="grid">
-
-    <div class="item">
-      <h3>1 ano de Netflix 🍿</h3>
-      <p>R$ 478,80</p>
-      <a class="btn" href="presente.html?nome=Netflix&valor=478,80&qr=QR_NETFLIX.png&cartao=LINK_NETFLIX">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>6 meses de corte para o noivo 💈</h3>
-      <p>R$ 180,00</p>
-      <a class="btn" href="presente.html?nome=Corte do Noivo&valor=180,00&qr=QR_CORTE.png&cartao=LINK_CORTE">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>6 meses de unha para a noiva 💅</h3>
-      <p>R$ 420,00</p>
-      <a class="btn" href="presente.html?nome=Unha da Noiva&valor=420,00&qr=QR_UNHA.png&cartao=LINK_UNHA">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>6 meses de Buenovela 📚</h3>
-      <p>R$ 1.507,74</p>
-      <a class="btn" href="presente.html?nome=Buenovela&valor=1507,74&qr=QR_BUENOVELA.png&cartao=LINK_BUENOVELA">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>Incentivo no shape dos noivos 💪</h3>
-      <p>R$ 300,00</p>
-      <a class="btn" href="presente.html?nome=Shape dos Noivos&valor=300,00&qr=QR_SHAPE.png&cartao=LINK_SHAPE">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>1 ano de Spotify Duo 🎶</h3>
-      <p>R$ 382,80</p>
-      <a class="btn" href="presente.html?nome=Spotify Duo&valor=382,80&qr=QR_SPOTIFY.png&cartao=LINK_SPOTIFY">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>1 semana de Cosechas 🥤</h3>
-      <p>R$ 252,00</p>
-      <a class="btn" href="presente.html?nome=Cosechas&valor=252,00&qr=QR_COSECHAS.png&cartao=LINK_COSECHAS">Presentear</a>
-    </div>
-
-    <div class="item destaque">
-      <h3>PS5 para o noivo 🎮</h3>
-      <p>R$ 3.000,00</p>
-      <a class="btn" href="presente.html?nome=PS5&valor=3000,00&qr=QR_PS5.png&cartao=LINK_PS5">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>Headset Gamer 🎧</h3>
-      <p>R$ 100,00</p>
-      <a class="btn" href="presente.html?nome=Headset Gamer&valor=100,00&qr=QR_HEADSET.png&cartao=LINK_HEADSET">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>Teclado + Mouse Gamer ⌨️</h3>
-      <p>R$ 150,00</p>
-      <a class="btn" href="presente.html?nome=Kit Gamer&valor=150,00&qr=QR_KIT.png&cartao=LINK_KIT">Presentear</a>
-    </div>
-
-    <div class="item">
-      <h3>6 meses de terapia 😅</h3>
-      <p>R$ 600,00</p>
-      <a class="btn" href="presente.html?nome=Terapia&valor=600,00&qr=QR_TERAPIA.png&cartao=LINK_TERAPIA">Presentear</a>
-    </div>
-
-    <div class="item carinho">
-      <h3>Desculpa noivos, estou quebrado(a) 😅</h3>
-      <p>R$ 50,00</p>
-      <a class="btn" href="presente.html?nome=Ajuda Simbolica&valor=50,00&qr=QR_50.png&cartao=LINK_50">Presentear</a>
-    </div>
-
+  <div class="presente">
+    <h3>1 Ano de Netflix</h3>
+    <p class="descricao">Para maratonar séries, chorar em filmes e dizer “só mais um episódio”.</p>
+    <p class="valor">R$ 671,88</p>
+    <button onclick="presentear(671.88)">Presentear</button>
   </div>
-</section>
 
-<section class="pix">
-  <h2>Presenteie com outro valor 💖</h2>
-  <p>Chave PIX:</p>
-  <code>21966018501</code>
-  <p>Caroline G. Rocha<br>Banco Santander</p>
+  <div class="presente">
+    <h3>6 meses de corte para o noivo</h3>
+    <p class="descricao">Porque a noiva ama o noivo… mas bem cortado.</p>
+    <p class="valor">R$ 180,00</p>
+    <button onclick="presentear(180)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>6 meses de unha para a noiva</h3>
+    <p class="descricao">Unhas feitas = paz, autoestima e menos estresse no lar.</p>
+    <p class="valor">R$ 420,00</p>
+    <button onclick="presentear(420)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>6 meses de Buenovela</h3>
+    <p class="descricao">Porque a noiva lê mais do que o noivo joga videogame.</p>
+    <p class="valor">R$ 1.507,74</p>
+    <button onclick="presentear(1507.74)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>6 meses de incentivo no shape dos noivos</h3>
+    <p class="descricao">Projeto “Casados sim, sedentários nunca”.</p>
+    <p class="valor">R$ 300,00</p>
+    <button onclick="presentear(300)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>1 Ano de Spotify Duo</h3>
+    <p class="descricao">Para ouvir músicas juntos… e discutir quem controla a playlist 😄</p>
+    <p class="valor">R$ 382,80</p>
+    <button onclick="presentear(382.80)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>1 Semana de Cosechas</h3>
+    <p class="descricao">Porque smoothie também é linguagem do amor.</p>
+    <p class="valor">R$ 252,00</p>
+    <button onclick="presentear(252)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>PS5 para o noivo</h3>
+    <p class="descricao">Um presente para o noivo… e um descanso mental para a noiva.</p>
+    <p class="valor">R$ 3.000,00</p>
+    <button onclick="presentear(3000)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>Desculpa noivos… estou quebrado(a)</h3>
+    <p class="descricao">Amor é presença… e às vezes um pix simbólico ❤️</p>
+    <p class="valor">R$ 50,00</p>
+    <button onclick="presentear(50)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>Headset Gamer</h3>
+    <p class="descricao">Para gritar no jogo sem assustar a noiva.</p>
+    <p class="valor">R$ 100,00</p>
+    <button onclick="presentear(100)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>Teclado + Mouse Gamer</h3>
+    <p class="descricao">Setup bonito, desempenho melhor e menos desculpas quando perder 😄</p>
+    <p class="valor">R$ 150,00</p>
+    <button onclick="presentear(150)">Presentear</button>
+  </div>
+
+  <div class="presente">
+    <h3>6 meses de terapia para a noiva</h3>
+    <p class="descricao">Presente preventivo. Recomendado para a saúde do casamento 😇</p>
+    <p class="valor">R$ 600,00</p>
+    <button onclick="presentear(600)">Presentear</button>
+  </div>
+
 </section>
 
 <footer>
-  <p class="amor">Com amor, Caroline & Mateus 🤍</p>
+  <p class="pix">
+    Presenteie com outro valor.<br>
+    Chave Pix: <strong>21966018501</strong><br>
+    Caroline G. Rocha – Banco Santander
+  </p>
+
+  <p class="assinatura">Com amor, Caroline e Mateus 🤍</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
