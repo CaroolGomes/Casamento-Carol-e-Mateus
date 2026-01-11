@@ -90,3 +90,53 @@ footer {
   margin-top: 25px;
   font-size: 22px;
 }
+/* ===== PÁGINA DE PRESENTE ===== */
+
+.presente-detalhe {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px solid #A57865;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.presente-detalhe h2 {
+  color: #683924;
+  margin-bottom: 15px;
+}
+
+.valor-grande {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #260F06;
+}
+
+.presente-detalhe img {
+  max-width: 260px;
+  margin: 20px auto;
+  display: block;
+}
+
+.instrucoes {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.botao-pagar {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #260F06;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-pagar:hover {
+  background-color: #683924;
+}
+
