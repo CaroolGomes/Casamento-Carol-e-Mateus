@@ -26,11 +26,13 @@ function tratarPaginaPresente() {
   titulo.innerText = `${nome} — R$ ${valor}`;
   imagemQR.src = qr;
 
-  if (cartao && cartao !== "#") {
-    linkCartao.href = cartao;
-  } else {
-    linkCartao.style.display = "none";
-  }
+  iif (cartao && cartao !== "#") {
+  linkCartao.href = cartao;
+} else {
+  linkCartao.href = "#";
 }
+
+ 
+
 
 
