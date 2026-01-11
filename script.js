@@ -1,23 +1,2 @@
-function presentear(valor) {
-  localStorage.setItem("valorPresente", valor);
-  window.location.href = "presente.html";
-}
+===================================== // Script principal - Caroline & Mateus // ===================================== document.addEventListener("DOMContentLoaded", () => { console.log("💍 Site Caroline & Mateus carregado com sucesso"); // Verifica se está na página de presente if (window.location.pathname.includes("presente.html")) { tratarPaginaPresente(); } }); function tratarPaginaPresente() { const params = new URLSearchParams(window.location.search); const nome = params.get("nome"); const valor = params.get("valor"); const qr = params.get("qr"); const cartao = params.get("cartao"); const titulo = document.getElementById("titulo-presente"); const imagemQR = document.getElementById("qr-pix"); const linkCartao = document.getElementById("link-cartao"); // Se faltar algum dado essencial, mostra aviso if (!nome || !valor || !qr) { titulo.innerText = "Presente não identificado"; imagemQR.style.display = "none"; linkCartao.style.display = "none"; return; } titulo.innerText = ${nome} — R$ ${valor}; imagemQR.src = qr; // Cartão é opcional if (cartao && cartao !== "#") { linkCartao.href = cartao; } else { linkCartao.style.display = "none"; } }
 
-function carregarPresente() {
-  const valor = localStorage.getItem("valorPresente");
-
-  const valorElemento = document.getElementById("valor-presente");
-  const qrCode = document.getElementById("qrCode");
-  const linkPagamento = document.getElementById("linkPagamento");
-
-  if (!valor || !valorElemento) return;
-
-  valorElemento.innerText =
-    "R$ " + parseFloat(valor).toFixed(2).replace(".", ",");
-
-  if (qrCode) qrCode.src = `qrcodes/pix-${valor}.png`;
-  if (linkPagamento)
-    linkPagamento.href = `https://seulinkdepagamento.com/valor-${valor}`;
-}
-
-document.addEventListener("DOMContentLoaded", carregarPresente);
