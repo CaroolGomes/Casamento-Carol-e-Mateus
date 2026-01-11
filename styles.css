@@ -142,3 +142,17 @@ footer {
   font-size: 20px;
   font-weight: 500;
 }
+.descricao {
+  font-size: 14px;
+  margin: 12px 0;
+  line-height: 1.4;
+  color: #555;
+}
+
+.hero-img {
+  max-width: 420px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 30px;
+}
+
