@@ -4,68 +4,32 @@
   <meta charset="UTF-8">
   <title>Presente para Caroline & Mateus</title>
 
-  <!-- Fonte decorativa -->
   <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
+<header class="hero">
   <h1 class="nomes">Caroline & Mateus</h1>
-  <p class="versiculo">
-    Obrigado por fazer parte da nossa história 🤍
-  </p>
+  <p class="versiculo">Obrigado por fazer parte da nossa história 🤍</p>
 </header>
 
 <section class="presente-detalhe">
-
-  <h2 class="titulo-presente">Você escolheu presentear com:</h2>
-
+  <h2>Você escolheu presentear com:</h2>
   <p id="valor-presente" class="valor-grande"></p>
 
-  <img id="qrCode" src="" alt="QR Code Pix">
+  <img id="qrCode" alt="QR Code Pix">
 
-  <p class="instrucoes">
-    Escaneie o QR Code acima ou utilize o botão abaixo para concluir o pagamento.
-  </p>
-
-  <a id="linkPagamento" class="botao-pagar" href="#" target="_blank">
+  <a id="linkPagamento" class="botao-pagar" target="_blank">
     Pagar com Pix ou Cartão
   </a>
-
 </section>
 
 <footer>
-  <p class="pix">
-    Prefere outro valor?<br>
-    Chave Pix: <strong>21966018501</strong><br>
-    Caroline G. Rocha – Banco Santander
-  </p>
-
   <p class="assinatura">Com amor, Caroline e Mateus 🤍</p>
 </footer>
 
-<script>
-  const valor = localStorage.getItem("valorPresente");
-
-  if (!valor) {
-    document.getElementById("valor-presente").innerText =
-      "Nenhum presente selecionado 🤍";
-    document.getElementById("qrCode").style.display = "none";
-    document.getElementById("linkPagamento").style.display = "none";
-  } else {
-    document.getElementById("valor-presente").innerText =
-      `R$ ${parseFloat(valor).toFixed(2)}`;
-
-    document.getElementById("qrCode").src =
-      `qrcodes/pix-${valor}.png`;
-
-    document.getElementById("linkPagamento").href =
-      `https://seulinkdepagamento.com/valor-${valor}`;
-  }
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
