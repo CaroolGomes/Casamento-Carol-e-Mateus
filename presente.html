@@ -3,28 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Presente para Caroline & Mateus</title>
+
+  <!-- Fonte decorativa -->
+  <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header>
-  <h1 class="nomes">Obrigado pelo carinho 🤍</h1>
+  <h1 class="nomes">Caroline & Mateus</h1>
+  <p class="versiculo">
+    Obrigado por fazer parte da nossa história 🤍
+  </p>
 </header>
 
 <section class="presente-detalhe">
 
-  <h2>Você escolheu presentear com:</h2>
+  <h2 class="titulo-presente">Você escolheu presentear com:</h2>
+
   <p id="valor-presente" class="valor-grande"></p>
 
   <img id="qrCode" src="" alt="QR Code Pix">
 
   <p class="instrucoes">
-    Escaneie o QR Code acima ou utilize o link abaixo para pagamento.
+    Escaneie o QR Code acima ou utilize o botão abaixo para concluir o pagamento.
   </p>
 
   <a id="linkPagamento" class="botao-pagar" href="#" target="_blank">
-    Pagar com cartão ou Pix
+    Pagar com Pix ou Cartão
   </a>
 
 </section>
@@ -44,7 +52,7 @@
 
   if (!valor) {
     document.getElementById("valor-presente").innerText =
-      "Nenhum presente selecionado.";
+      "Nenhum presente selecionado 🤍";
     document.getElementById("qrCode").style.display = "none";
     document.getElementById("linkPagamento").style.display = "none";
   } else {
