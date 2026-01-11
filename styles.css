@@ -13,25 +13,28 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: var(--champagne);
+  background: linear-gradient(to bottom, var(--champagne), #ffffff);
   color: var(--expresso);
 }
 
 .hero {
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
-  background: linear-gradient(to bottom, var(--champagne), #fff);
 }
 
 .hero h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 80px;
+  font-family: 'Brittany Signature', cursive;
+  font-size: 100px;
   color: var(--milk);
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.18);
 }
 
 .versiculo {
-  max-width: 700px;
-  margin: 30px auto;
+  max-width: 800px;
+  margin: 40px auto;
+  font-size: 20px;
+  line-height: 1.6;
   font-style: italic;
 }
 
@@ -58,20 +61,23 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  gap: 30px;
   max-width: 1100px;
   margin: auto;
 }
 
 .item {
   background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  padding: 30px;
+  border-radius: 18px;
+  border: 2px solid var(--champagne);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, border 0.3s ease;
 }
 
-.item h3 {
-  margin-bottom: 10px;
+.item:hover {
+  transform: translateY(-6px);
+  border-color: var(--mocha);
 }
 
 .item p {
@@ -82,8 +88,8 @@ body {
 .btn {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 20px;
-  background: var(--mocha);
+  padding: 12px 26px;
+  background: linear-gradient(to right, var(--mocha), var(--milk));
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
@@ -94,7 +100,7 @@ body {
 }
 
 .destaque {
-  border: 2px solid var(--mocha);
+  border-color: var(--mocha);
 }
 
 .carinho {
@@ -104,31 +110,26 @@ body {
 .pix {
   background: var(--milk);
   color: #fff;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .pix code {
   display: block;
   margin: 15px auto;
-  padding: 10px;
+  padding: 10px 20px;
   background: #fff;
   color: var(--expresso);
+  border-radius: 10px;
   width: fit-content;
-  border-radius: 8px;
-}
-
-.pix button {
-  padding: 10px 25px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  background: var(--champagne);
 }
 
 footer {
-  padding: 30px;
+  padding: 35px;
   text-align: center;
-  font-size: 14px;
 }
 
+.amor {
+  font-size: 18px;
+  font-weight: 500;
+}
