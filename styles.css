@@ -25,7 +25,7 @@ body {
 
 .hero h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 64px;
+  font-size: 80px;
   color: var(--milk);
 }
 
@@ -131,3 +131,4 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
