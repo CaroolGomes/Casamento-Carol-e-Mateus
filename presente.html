@@ -1,79 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentear | Caroline & Mateus</title>
-
-  <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/brittany-signature" rel="stylesheet">
-
-  <!-- Estilo principal -->
+  <title>Presente para Caroline & Mateus</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- CABEÇALHO -->
-<section class="hero">
-  <h1>Caroline & Mateus</h1>
-  <p class="versiculo">
-    Obrigada por fazer parte da nossa história 🤍
+<header>
+  <h1 class="nomes">Obrigado pelo carinho 🤍</h1>
+</header>
+
+<section class="presente-detalhe">
+
+  <h2>Você escolheu presentear com:</h2>
+  <p id="valor-presente" class="valor-grande"></p>
+
+  <!-- IMAGEM DO QR CODE -->
+  <img id="qrCode" src="" alt="QR Code Pix">
+
+  <p class="instrucoes">
+    Escaneie o QR Code acima ou utilize o link abaixo para pagamento.
   </p>
+
+  <!-- LINK CARTÃO / PIX -->
+  <a id="linkPagamento" class="botao-pagar" href="#" target="_blank">
+    Pagar com cartão ou Pix
+  </a>
+
 </section>
 
-<!-- CONTEÚDO DO PRESENTE -->
-<section class="lista">
-  <h2 id="titulo-presente">Presente</h2>
-
-  <div class="grid" style="max-width:500px">
-
-    <div class="item">
-      <p style="margin-bottom:15px;">
-        Escaneie o QR Code abaixo para realizar o pagamento via PIX
-      </p>
-
-      <!-- QR CODE PIX -->
-      <img 
-        id="qr-pix"
-        src=""
-        alt="QR Code PIX"
-        style="width:100%; max-width:260px; margin:20px auto; display:block;"
-      >
-
-      <!-- BOTÃO CARTÃO -->
-      <a 
-        id="link-cartao"
-        href="#"
-        target="_blank"
-        class="btn"
-        style="margin-top:20px;"
-      >
-        Pagar com Cartão de Crédito
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- PIX MANUAL -->
-<section class="pix">
-  <h2>Prefere outro valor? 💖</h2>
-  <p>Chave PIX:</p>
-  <code>21966018501</code>
-  <p>
-    Caroline G. Rocha<br>
-    Banco Santander
-  </p>
-</section>
-
-<!-- RODAPÉ -->
 <footer>
-  <p class="amor">Com amor, Caroline & Mateus 🤍</p>
+  <p class="pix">
+    Prefere outro valor?  
+    <br>
+    Chave Pix: <strong>21966018501</strong><br>
+    Caroline G. Rocha – Banco Santander
+  </p>
+
+  <p class="assinatura">Com amor, Caroline e Mateus 🤍</p>
 </footer>
 
-<!-- SCRIPT -->
-<script src="script.js"></script>
+<script>
+  const valor = localStorage.getItem("valorPresente");
+
+  if (!valor) {
+    document.getElementById("valor-presente").innerText =
+      "Nenhum presente selecionado.";
+    document.getElementById("qrCode").style.display = "none";
+    document.getElementById("linkPagamento").style.display = "none";
+  } else {
+    document.getElementById("valor-presente").innerText =
+      `R$ ${parseFloat(valor).toFixed(2)}`;
+
+    /* 🔽 AQUI VOCÊ VAI TROCAR PELOS SEUS LINKS/QR CODES 🔽 */
+
+    document.getElementById("qrCode").src =
+      `qrcodes/pix-${valor}.png`;
+
+    document.getElementById("linkPagamento").href =
+      `https://seulinkdepagamento.com/valor-${valor}`;
+  }
+</script>
+
 </body>
 </html>
