@@ -18,7 +18,7 @@ body {
 }
 
 .hero {
-  padding: 20px 10px;
+  padding: 0px 0px;
   text-align: center;
 }
 
@@ -36,8 +36,8 @@ body {
 .versiculo {
   max-width: 800px;
   margin: auto;
-  font-size: 22px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.2;
   font-style: italic;
 }
 
@@ -151,6 +151,7 @@ footer {
   line-height: 1.4;
   color: #555;
 }
+
 
 
 
