@@ -18,18 +18,18 @@ body {
 }
 
 .hero {
-  padding: 90px 20px;
+  padding: 0px 0px;
   text-align: center;
 }
 
 .hero-img {
   width: 100%;
-  max-width: 1500px; /* controla a largura no desktop */
+  max-width: 1800px; /* controla a largura no desktop */
   height: auto;
   display: block;
-  margin: 0 auto 40px;
-  border-radius: 22px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  margin: 0 auto 0px;
+  border-radius: 0px;
+  box-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 
 
@@ -151,6 +151,7 @@ footer {
   line-height: 1.4;
   color: #555;
 }
+
 
 
 
