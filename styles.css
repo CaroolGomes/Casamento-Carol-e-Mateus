@@ -120,9 +120,9 @@ body {
 }
 
 .pix {
-  background: var(--milk);
+  background: var(--expresso);
   color: #fff;
-  padding: 60px 20px;
+  padding: 30px 10px;
   text-align: center;
 }
 
@@ -151,6 +151,7 @@ footer {
   line-height: 1.4;
   color: #555;
 }
+
 
 
 
